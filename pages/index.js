@@ -33,19 +33,19 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title> Become a Twitter celebrity </title>
+        <title> TweetBro </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Become a Twitter celebrity</h1>
+            <h1> TweetBro </h1>
           </div>
           <div className="header-subtitle">
-            <h2>Twitter threads, made to go viral</h2>
+            <h2> Generate threads like your favourite Twitter Startup Bros</h2>
           </div>
         </div>
         <div className="prompt-container">
-          <textarea placeholder="Write the name of your made up Harvard Business Review article - try 'How Apple has built the template for the modern consumer tech companye', or 'How does Google win in a world where AI replaces search'" className="prompt-box"
+          <textarea placeholder="Write the name of a made up Harvard Business Review article - try 'How Apple built the template for the modern consumer tech company' as an example, or try your own!" className="prompt-box"
           value = {userInput} onChange = {onUserChangedText}/>;
           <div className="prompt-buttons">
             <a
@@ -69,19 +69,7 @@ const Home = () => {
            </div>
           )}
         </div>
-      </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
-          </div>
-        </a>
-      </div>
+        </div>
     </div>
   );
 };
